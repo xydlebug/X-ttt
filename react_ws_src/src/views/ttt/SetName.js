@@ -17,8 +17,8 @@ export default class SetName extends Component {
 				<h1>Set Name</h1>
 
 				<div ref='nameHolder' className='input_holder left'>
-					<label>Name </label>
-					<input ref='name' type='text' className='input name' placeholder='Name' />
+					<label htmlFor='name'>Name </label>
+					<input id='name' ref='name' type='text' className='input name' placeholder='Name' />
 				</div>
 
 
