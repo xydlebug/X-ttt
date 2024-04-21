@@ -42,7 +42,7 @@
 <!--	========================	========================	========================	-->
 
 	<header>
-		<head_l_logo	i='images/react_sha.png'		u='/'		/>
+		<head_l_logo	i='images/react_sha.png'		u='/'		label='Return to Home page'	/>
 		<site_title		txt='X Tic Tac Toe'				u='/'		/>
 	</header>
 
