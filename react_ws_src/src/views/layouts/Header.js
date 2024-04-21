@@ -17,8 +17,8 @@ export default class Header extends Component {
 				<div id='brand'>
 					<div className='container'>
 
-						<Link to={app.settings.ws_conf.header.head_l_logo.u} className='logo-tl'>
-							<img src={app.settings.ws_conf.header.head_l_logo.i} />
+						<Link to={app.settings.ws_conf.header.head_l_logo.u} className='logo-tl' aria-label={app.settings.ws_conf.header.head_l_logo.label}>
+							<img src={app.settings.ws_conf.header.head_l_logo.i} alt="" role="presentation" />
 						</Link>
 
 
