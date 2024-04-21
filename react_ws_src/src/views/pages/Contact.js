@@ -42,18 +42,18 @@ export default class Contact extends Component {
 			<form id='contact_form'>
 
 				<FieldHolder ref='nameHolder' goodClasses='input_holder left' badClass='error' isValid={nameValid}>
-					<label>Name <span className='required'>is a required field</span></label>
-					<input ref='name' type='text' className='input name' placeholder='Name' onBlur={this.checkOnBlurr.bind(this)} />
+					<label htmlFor='name'>Name <span className='required'>is a required field</span></label>
+					<input id='name' ref='name' type='text' className='input name' placeholder='Name' onBlur={this.checkOnBlurr.bind(this)} />
 				</FieldHolder>
 
 				<FieldHolder ref='emailHolder' goodClasses='input_holder left' badClass='error' isValid={emailValid}>
-					<label>Email <span className='required'>is a required field</span></label>
-					<input ref='email' type='email' className='input name' placeholder='Your Email' onBlur={this.checkOnBlurr.bind(this)} />
+					<label htmlFor='email'>Email <span className='required'>is a required field</span></label>
+					<input id='email' ref='email' type='email' className='input name' placeholder='Your Email' onBlur={this.checkOnBlurr.bind(this)} />
 				</FieldHolder>
 
 				<FieldHolder ref='subjectHolder' goodClasses='input_holder select_option' badClass='error' isValid={subjectValid}>
-					<label>Subject <span className='required'>is a required field</span></label>
-					<select ref='subject' onChange={this.checkOnBlurr.bind(this)}>
+					<label htmlFor='subject'>Subject <span className='required'>is a required field</span></label>
+					<select id='subject' ref='subject' onChange={this.checkOnBlurr.bind(this)}>
 						<option value=''>Choose one</option>
 						<option>Join / Login</option>
 						<option>An issue with the website</option>
@@ -62,8 +62,8 @@ export default class Contact extends Component {
 				</FieldHolder>
 
 				<FieldHolder ref='messageHolder' goodClasses='input_holder clear message' badClass='error' isValid={messageValid}>
-					<label>Message <span className='required'>is a required field</span></label>
-					<textarea ref='message' className='input textarea' onBlur={this.checkOnBlurr.bind(this)}></textarea>
+					<label htmlFor='message'>Message <span className='required'>is a required field</span></label>
+					<textarea id='message' ref='message' className='input textarea' onBlur={this.checkOnBlurr.bind(this)}></textarea>
 				</FieldHolder>
 
 				<button type='submit' onClick={this.sendMessage.bind(this)} className='button'><span>SEND <span className='fa fa-caret-right'></span></span></button>
